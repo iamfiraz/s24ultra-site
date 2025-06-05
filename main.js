@@ -1,27 +1,22 @@
-function Calculate() {
+function calculate() {
+    var n1= parseInt(document.getElementById("n1").value);
+    var n2= parseInt(document.getElementById("n2").value);
+    var op= document.getElementById("op").value;
+    var res= 0;
 
-
-    var x = parseInt(document.getElementById("num1").value);
-    console.log(x)
-    var y = parseInt(document.getElementById("num2").value);
-    console.log(y)
-    var operator = document.getElementById("op").value;
-    console.log(operator)
-    var result = 0;
-
-    if (operator == "+") {
-        result = x + y;
+    if (op== "Addition (+)") {
+        res=n1+n2;
     }
-    else if (operator == "-") {
-        result = x - y;
+    else if (op== "Subtraction (-)") {
+        res=n1-n2;
     }
-    else if (operator == "*") {
-        result = x * y;
+    else if (op== "Multiplication (x)") {
+        res=n1*n2;
     }
-    else if (operator == "/") {
-        result = x / y;
+    else if (op== "Division (/)") {
+        res=n1/n2;
     }
 
-    document.getElementById("result-text").innerText = result;
+    document.getElementById("res1").innerText = res;
     event.preventDefault();
 }
