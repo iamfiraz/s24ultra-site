@@ -1,4 +1,4 @@
-function calculate() {
+function Calculate() {
 
 
     var x = parseInt(document.getElementById("num1").value);
