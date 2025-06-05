@@ -1,0 +1,98 @@
+h1{
+    color: rgba(236, 236, 236, 0.685);
+    margin-bottom: 30;
+}
+body{
+
+  background-image: url(5d14801e39863eaf0da1f3623795a461.jpg);
+  backdrop-filter: blur(14px);
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}   
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.feedback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+
+}
+.navbar ul{
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: bisque;
+    width: 100%;
+    padding: 15px;
+}
+p{
+    margin-bottom: 80px; 
+}
+*{
+    justify-items: center;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+.features li{
+    margin-top: 40px;
+    margin-bottom: -10px;
+}
+
+@keyframes MoveUpDown{
+    0%{
+       transform: scale(100%);
+ 
+    }
+    50%{
+    
+       transform: scale(150%);
+ 
+       }
+    
+    100%{   
+       transform: scale(100%);
+
+}
+}
+
+
+@keyframes Rotate{
+    0%{
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+h1{
+
+    animation: Rotate 5s infinite linear;
+        animation: MoveUpDown 3s infinite;
+/* last animation gets take place */
+    }

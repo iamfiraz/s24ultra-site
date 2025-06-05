@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css" />
+</head>
+
+<body text="white">
+    <div class="calc">
+        <form>
+            <label>Enter First Number : </label>
+            <input id="n1" /><br>
+            <label>Enter Second Number : </label>
+            <input id="n2" /><br>
+            <label>Operation : </label>
+            <select id="op">
+                <option>Addition (+)</option>
+                <option>Subtraction (-)</option>
+                <option>Multiplication (x)</option>
+                <option>Division (/)</option>
+            </select><br>
+            <button onClick="Calculate()">Calcuate</button>
+            <h3><u>Result </u> </h3>
+            <h2 id="res1"></h2>
+        </form>
+        
+    </div>
+    <div class="back">
+        <a href="index.html">
+            <button>Go Back</button>
+        </a>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
